@@ -8,7 +8,7 @@ import GetUsers from "./router/getuserRouter.js";
 dotenv.config();
 connectDB();
 const app=express();
-const PORT=5000;
+const PORT=process.env.POST||5000;
 app.use(cors({
   origin: 'http://localhost:5173', // The URL of your frontend
   credentials: true,
