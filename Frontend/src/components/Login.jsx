@@ -20,7 +20,7 @@ const LoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', formData, { withCredentials: true });
+      const res = await axios.post('https://mern-info-application-1.onrender.com/api/auth/login', formData, { withCredentials: true });
       console.log('User logged in:', res.data);
       // Redirect to the users page after login
       navigate('/users');

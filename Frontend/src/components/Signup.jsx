@@ -24,7 +24,7 @@ const SignupForm = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/signup", formData); // Backend signup endpoint
+      const res = await axios.post("https://mern-info-application-1.onrender.com/api/auth/signup", formData); // Backend signup endpoint
       console.log("User signed up:", res.data);
       navigate('/users');
     } catch (err) {

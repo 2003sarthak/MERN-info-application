@@ -9,7 +9,7 @@ const UserList = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/users', { withCredentials: true });
+        const res = await axios.get('https://mern-info-application-1.onrender.com/api/users', { withCredentials: true });
         setUsers(res.data);  
       } catch (err) {
         console.log("Error fetching users:", err.response ? err.response.data : err.message);
