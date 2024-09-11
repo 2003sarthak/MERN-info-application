@@ -10,7 +10,7 @@ connectDB();
 const app=express();
 const PORT=process.env.POST||5000;
 app.use(cors({
-  origin: 'http://localhost:5173', // The URL of your frontend
+  origin: 'https://mern-info-application.vercel.app', // The URL of your frontend
   credentials: true,
 }));
 
